@@ -1,0 +1,916 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C0D055C3D5D79472A6D6F54 /* Pods_PlatziTweets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE82C2FDBB0BD4CEAAA4A5D /* Pods_PlatziTweets.framework */; };
+		27EADEC9A762781EAADA8BC9 /* Pods_PlatziTweetsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5414EDF00936C8CCF16A1010 /* Pods_PlatziTweetsTests.framework */; };
+		45D6392BD97F765A7511358B /* Pods_PlatziTweets_PlatziTweetsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61B213B6E0CFA51787F5F095 /* Pods_PlatziTweets_PlatziTweetsUITests.framework */; };
+		F10184F3268CF23000E34343 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10184F2268CF23000E34343 /* LoginResponse.swift */; };
+		F10184F5268CF24200E34343 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10184F4268CF24200E34343 /* ErrorResponse.swift */; };
+		F10184F7268CF25800E34343 /* GeneralResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10184F6268CF25800E34343 /* GeneralResponse.swift */; };
+		F10184FA268CF29E00E34343 /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10184F9268CF29E00E34343 /* RegisterRequest.swift */; };
+		F10184FC268CF2B700E34343 /* PostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10184FB268CF2B700E34343 /* PostRequest.swift */; };
+		F10184FE268CF2DD00E34343 /* PostRequestLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10184FD268CF2DD00E34343 /* PostRequestLocation.swift */; };
+		F1018500268CF30500E34343 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10184FF268CF30500E34343 /* LoginRequest.swift */; };
+		F1018502268CF33700E34343 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1018501268CF33700E34343 /* Endpoints.swift */; };
+		F1018504268CF35C00E34343 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1018503268CF35C00E34343 /* User.swift */; };
+		F1018506268CF37600E34343 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1018505268CF37600E34343 /* Post.swift */; };
+		F1018508268CF38E00E34343 /* PostLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1018507268CF38E00E34343 /* PostLocation.swift */; };
+		F168B9B326925DDE00216058 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F168B9B226925DDE00216058 /* HomeViewController.swift */; };
+		F168B9BC2692842A00216058 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F168B9BB2692842A00216058 /* WelcomeViewController.swift */; };
+		F168B9BE2692844700216058 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F168B9BD2692844700216058 /* LoginViewController.swift */; };
+		F185601826A0A48200DDA11D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F185601726A0A48200DDA11D /* MapViewController.swift */; };
+		F1877A0A26929C7F00089AC7 /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1877A0826929C7F00089AC7 /* TweetTableViewCell.swift */; };
+		F1877A0B26929C7F00089AC7 /* TweetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1877A0926929C7F00089AC7 /* TweetTableViewCell.xib */; };
+		F1C8E8702693E04F00DC58EF /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C8E86F2693E04F00DC58EF /* AddPostViewController.swift */; };
+		F1C8E8722694A25500DC58EF /* Pods_PlatziTweets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A76B517D7268E0E2E0E65CE1 /* Pods_PlatziTweets.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F1CD81F3268BCCD300943D98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD81F2268BCCD300943D98 /* AppDelegate.swift */; };
+		F1CD81F7268BCCD300943D98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD81F6268BCCD300943D98 /* ViewController.swift */; };
+		F1CD81FC268BCCD600943D98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1CD81FB268BCCD600943D98 /* Assets.xcassets */; };
+		F1CD81FF268BCCD600943D98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1CD81FD268BCCD600943D98 /* LaunchScreen.storyboard */; };
+		F1CD820A268BCCD600943D98 /* PlatziTweetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD8209268BCCD600943D98 /* PlatziTweetsTests.swift */; };
+		F1CD8215268BCCD600943D98 /* PlatziTweetsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD8214268BCCD600943D98 /* PlatziTweetsUITests.swift */; };
+		F1CD8226268BD27E00943D98 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1CD8225268BD27E00943D98 /* Welcome.storyboard */; };
+		F1CD822C268BE96600943D98 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD822B268BE96600943D98 /* RegisterViewController.swift */; };
+		F1CD822F268CE6C000943D98 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1CD822E268CE6C000943D98 /* Home.storyboard */; };
+		F1D842E2269CE512000612B7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1D842E1269CE512000612B7 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1CD8206268BCCD600943D98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1CD81E7268BCCD300943D98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1CD81EE268BCCD300943D98;
+			remoteInfo = PlatziTweets;
+		};
+		F1CD8211268BCCD600943D98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1CD81E7268BCCD300943D98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1CD81EE268BCCD300943D98;
+			remoteInfo = PlatziTweets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F1C8E8732694A25500DC58EF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F1C8E8722694A25500DC58EF /* Pods_PlatziTweets.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3CE82C2FDBB0BD4CEAAA4A5D /* Pods_PlatziTweets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlatziTweets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47AFAEF8B824E9FDBB7B3888 /* Pods-PlatziTweetsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlatziTweetsTests.debug.xcconfig"; path = "Target Support Files/Pods-PlatziTweetsTests/Pods-PlatziTweetsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		523278F3DC20DF3B66FA2E32 /* Pods-PlatziTweets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlatziTweets.release.xcconfig"; path = "Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets.release.xcconfig"; sourceTree = "<group>"; };
+		5414EDF00936C8CCF16A1010 /* Pods_PlatziTweetsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlatziTweetsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60840E96C0C515B4C3A33271 /* Pods-PlatziTweets-PlatziTweetsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlatziTweets-PlatziTweetsUITests.release.xcconfig"; path = "Target Support Files/Pods-PlatziTweets-PlatziTweetsUITests/Pods-PlatziTweets-PlatziTweetsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		61B213B6E0CFA51787F5F095 /* Pods_PlatziTweets_PlatziTweetsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlatziTweets_PlatziTweetsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A76B517D7268E0E2E0E65CE1 /* Pods_PlatziTweets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlatziTweets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3D74BA6CCA29C9C26299022 /* Pods-PlatziTweets-PlatziTweetsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlatziTweets-PlatziTweetsUITests.debug.xcconfig"; path = "Target Support Files/Pods-PlatziTweets-PlatziTweetsUITests/Pods-PlatziTweets-PlatziTweetsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C98FC93DD1E5B49549D1DC19 /* Pods-PlatziTweetsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlatziTweetsTests.release.xcconfig"; path = "Target Support Files/Pods-PlatziTweetsTests/Pods-PlatziTweetsTests.release.xcconfig"; sourceTree = "<group>"; };
+		EEE6D3BA13311A8B4D27959C /* Pods-PlatziTweets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlatziTweets.debug.xcconfig"; path = "Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets.debug.xcconfig"; sourceTree = "<group>"; };
+		F10184F2268CF23000E34343 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		F10184F4268CF24200E34343 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		F10184F6268CF25800E34343 /* GeneralResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralResponse.swift; sourceTree = "<group>"; };
+		F10184F9268CF29E00E34343 /* RegisterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
+		F10184FB268CF2B700E34343 /* PostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequest.swift; sourceTree = "<group>"; };
+		F10184FD268CF2DD00E34343 /* PostRequestLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequestLocation.swift; sourceTree = "<group>"; };
+		F10184FF268CF30500E34343 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		F1018501268CF33700E34343 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		F1018503268CF35C00E34343 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F1018505268CF37600E34343 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		F1018507268CF38E00E34343 /* PostLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLocation.swift; sourceTree = "<group>"; };
+		F168B9B226925DDE00216058 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F168B9BB2692842A00216058 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		F168B9BD2692844700216058 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F185601726A0A48200DDA11D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		F1877A0826929C7F00089AC7 /* TweetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
+		F1877A0926929C7F00089AC7 /* TweetTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TweetTableViewCell.xib; sourceTree = "<group>"; };
+		F1C8E86F2693E04F00DC58EF /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
+		F1CD81EF268BCCD300943D98 /* PlatziTweets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlatziTweets.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1CD81F2268BCCD300943D98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F1CD81F6268BCCD300943D98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F1CD81FB268BCCD600943D98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1CD81FE268BCCD600943D98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F1CD8200268BCCD600943D98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1CD8205268BCCD600943D98 /* PlatziTweetsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlatziTweetsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1CD8209268BCCD600943D98 /* PlatziTweetsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatziTweetsTests.swift; sourceTree = "<group>"; };
+		F1CD820B268BCCD600943D98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1CD8210268BCCD600943D98 /* PlatziTweetsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlatziTweetsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1CD8214268BCCD600943D98 /* PlatziTweetsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatziTweetsUITests.swift; sourceTree = "<group>"; };
+		F1CD8216268BCCD600943D98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1CD8225268BD27E00943D98 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+		F1CD822B268BE96600943D98 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		F1CD822E268CE6C000943D98 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		F1D842E1269CE512000612B7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1CD81EC268BCCD300943D98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C0D055C3D5D79472A6D6F54 /* Pods_PlatziTweets.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1CD8202268BCCD600943D98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27EADEC9A762781EAADA8BC9 /* Pods_PlatziTweetsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1CD820D268BCCD600943D98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45D6392BD97F765A7511358B /* Pods_PlatziTweets_PlatziTweetsUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB5FA67A14D7A3B5636F0CE0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EEE6D3BA13311A8B4D27959C /* Pods-PlatziTweets.debug.xcconfig */,
+				523278F3DC20DF3B66FA2E32 /* Pods-PlatziTweets.release.xcconfig */,
+				B3D74BA6CCA29C9C26299022 /* Pods-PlatziTweets-PlatziTweetsUITests.debug.xcconfig */,
+				60840E96C0C515B4C3A33271 /* Pods-PlatziTweets-PlatziTweetsUITests.release.xcconfig */,
+				47AFAEF8B824E9FDBB7B3888 /* Pods-PlatziTweetsTests.debug.xcconfig */,
+				C98FC93DD1E5B49549D1DC19 /* Pods-PlatziTweetsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D103EA0D3490BEA69D1BE9C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CE82C2FDBB0BD4CEAAA4A5D /* Pods_PlatziTweets.framework */,
+				61B213B6E0CFA51787F5F095 /* Pods_PlatziTweets_PlatziTweetsUITests.framework */,
+				5414EDF00936C8CCF16A1010 /* Pods_PlatziTweetsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F10184F0268CF1CF00E34343 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F1018503268CF35C00E34343 /* User.swift */,
+				F1018505268CF37600E34343 /* Post.swift */,
+				F1018507268CF38E00E34343 /* PostLocation.swift */,
+				F10184F8268CF27F00E34343 /* Requests */,
+				F10184F1268CF1FE00E34343 /* Responses */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F10184F1268CF1FE00E34343 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				F10184F2268CF23000E34343 /* LoginResponse.swift */,
+				F10184F4268CF24200E34343 /* ErrorResponse.swift */,
+				F10184F6268CF25800E34343 /* GeneralResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		F10184F8268CF27F00E34343 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				F10184F9268CF29E00E34343 /* RegisterRequest.swift */,
+				F10184FB268CF2B700E34343 /* PostRequest.swift */,
+				F10184FD268CF2DD00E34343 /* PostRequestLocation.swift */,
+				F10184FF268CF30500E34343 /* LoginRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		F168B9B4269261D000216058 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F1877A0826929C7F00089AC7 /* TweetTableViewCell.swift */,
+				F1877A0926929C7F00089AC7 /* TweetTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F1856016269FD88400DDA11D /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				A76B517D7268E0E2E0E65CE1 /* Pods_PlatziTweets.framework */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		F1CD81E6268BCCD300943D98 = {
+			isa = PBXGroup;
+			children = (
+				F1CD81F1268BCCD300943D98 /* PlatziTweets */,
+				F1CD8208268BCCD600943D98 /* PlatziTweetsTests */,
+				F1CD8213268BCCD600943D98 /* PlatziTweetsUITests */,
+				F1CD81F0268BCCD300943D98 /* Products */,
+				AB5FA67A14D7A3B5636F0CE0 /* Pods */,
+				D103EA0D3490BEA69D1BE9C7 /* Frameworks */,
+				F1856016269FD88400DDA11D /* Recovered References */,
+			);
+			sourceTree = "<group>";
+		};
+		F1CD81F0268BCCD300943D98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1CD81EF268BCCD300943D98 /* PlatziTweets.app */,
+				F1CD8205268BCCD600943D98 /* PlatziTweetsTests.xctest */,
+				F1CD8210268BCCD600943D98 /* PlatziTweetsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1CD81F1268BCCD300943D98 /* PlatziTweets */ = {
+			isa = PBXGroup;
+			children = (
+				F1CD8223268BD20E00943D98 /* Modules */,
+				F1CD8222268BD20000943D98 /* Commons */,
+				F1CD8200268BCCD600943D98 /* Info.plist */,
+				F1D842E1269CE512000612B7 /* GoogleService-Info.plist */,
+			);
+			path = PlatziTweets;
+			sourceTree = "<group>";
+		};
+		F1CD8208268BCCD600943D98 /* PlatziTweetsTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1CD8209268BCCD600943D98 /* PlatziTweetsTests.swift */,
+				F1CD820B268BCCD600943D98 /* Info.plist */,
+			);
+			path = PlatziTweetsTests;
+			sourceTree = "<group>";
+		};
+		F1CD8213268BCCD600943D98 /* PlatziTweetsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F1CD8214268BCCD600943D98 /* PlatziTweetsUITests.swift */,
+				F1CD8216268BCCD600943D98 /* Info.plist */,
+			);
+			path = PlatziTweetsUITests;
+			sourceTree = "<group>";
+		};
+		F1CD8222268BD20000943D98 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				F1018501268CF33700E34343 /* Endpoints.swift */,
+				F10184F0268CF1CF00E34343 /* Models */,
+				F1CD81F2268BCCD300943D98 /* AppDelegate.swift */,
+				F1CD81F6268BCCD300943D98 /* ViewController.swift */,
+				F1CD81FB268BCCD600943D98 /* Assets.xcassets */,
+				F1CD81FD268BCCD600943D98 /* LaunchScreen.storyboard */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		F1CD8223268BD20E00943D98 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F1CD822D268CE69400943D98 /* Home */,
+				F1CD8224268BD25600943D98 /* Welcome */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F1CD8224268BD25600943D98 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				F1CD8225268BD27E00943D98 /* Welcome.storyboard */,
+				F1CD822B268BE96600943D98 /* RegisterViewController.swift */,
+				F168B9BB2692842A00216058 /* WelcomeViewController.swift */,
+				F168B9BD2692844700216058 /* LoginViewController.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		F1CD822D268CE69400943D98 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F168B9B4269261D000216058 /* Cells */,
+				F1CD822E268CE6C000943D98 /* Home.storyboard */,
+				F168B9B226925DDE00216058 /* HomeViewController.swift */,
+				F1C8E86F2693E04F00DC58EF /* AddPostViewController.swift */,
+				F185601726A0A48200DDA11D /* MapViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1CD81EE268BCCD300943D98 /* PlatziTweets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1CD8219268BCCD600943D98 /* Build configuration list for PBXNativeTarget "PlatziTweets" */;
+			buildPhases = (
+				081FBBD61098D4139A612A00 /* [CP] Check Pods Manifest.lock */,
+				F1CD81EB268BCCD300943D98 /* Sources */,
+				F1CD81EC268BCCD300943D98 /* Frameworks */,
+				F1CD81ED268BCCD300943D98 /* Resources */,
+				F1C8E8732694A25500DC58EF /* Embed Frameworks */,
+				2F2877518E77CD860DB95CFB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlatziTweets;
+			productName = PlatziTweets;
+			productReference = F1CD81EF268BCCD300943D98 /* PlatziTweets.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1CD8204268BCCD600943D98 /* PlatziTweetsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1CD821C268BCCD600943D98 /* Build configuration list for PBXNativeTarget "PlatziTweetsTests" */;
+			buildPhases = (
+				BC2B8BD6E931A54618EE4C7D /* [CP] Check Pods Manifest.lock */,
+				F1CD8201268BCCD600943D98 /* Sources */,
+				F1CD8202268BCCD600943D98 /* Frameworks */,
+				F1CD8203268BCCD600943D98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1CD8207268BCCD600943D98 /* PBXTargetDependency */,
+			);
+			name = PlatziTweetsTests;
+			productName = PlatziTweetsTests;
+			productReference = F1CD8205268BCCD600943D98 /* PlatziTweetsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F1CD820F268BCCD600943D98 /* PlatziTweetsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1CD821F268BCCD600943D98 /* Build configuration list for PBXNativeTarget "PlatziTweetsUITests" */;
+			buildPhases = (
+				6F79BBDCEF3E0BB99EE334D2 /* [CP] Check Pods Manifest.lock */,
+				F1CD820C268BCCD600943D98 /* Sources */,
+				F1CD820D268BCCD600943D98 /* Frameworks */,
+				F1CD820E268BCCD600943D98 /* Resources */,
+				F8A683768095342999050AD9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1CD8212268BCCD600943D98 /* PBXTargetDependency */,
+			);
+			name = PlatziTweetsUITests;
+			productName = PlatziTweetsUITests;
+			productReference = F1CD8210268BCCD600943D98 /* PlatziTweetsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1CD81E7268BCCD300943D98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					F1CD81EE268BCCD300943D98 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					F1CD8204268BCCD600943D98 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = F1CD81EE268BCCD300943D98;
+					};
+					F1CD820F268BCCD600943D98 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = F1CD81EE268BCCD300943D98;
+					};
+				};
+			};
+			buildConfigurationList = F1CD81EA268BCCD300943D98 /* Build configuration list for PBXProject "PlatziTweets" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1CD81E6268BCCD300943D98;
+			productRefGroup = F1CD81F0268BCCD300943D98 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1CD81EE268BCCD300943D98 /* PlatziTweets */,
+				F1CD8204268BCCD600943D98 /* PlatziTweetsTests */,
+				F1CD820F268BCCD600943D98 /* PlatziTweetsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1CD81ED268BCCD300943D98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1877A0B26929C7F00089AC7 /* TweetTableViewCell.xib in Resources */,
+				F1CD81FF268BCCD600943D98 /* LaunchScreen.storyboard in Resources */,
+				F1CD81FC268BCCD600943D98 /* Assets.xcassets in Resources */,
+				F1CD8226268BD27E00943D98 /* Welcome.storyboard in Resources */,
+				F1CD822F268CE6C000943D98 /* Home.storyboard in Resources */,
+				F1D842E2269CE512000612B7 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1CD8203268BCCD600943D98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1CD820E268BCCD600943D98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		081FBBD61098D4139A612A00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlatziTweets-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F2877518E77CD860DB95CFB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F79BBDCEF3E0BB99EE334D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlatziTweets-PlatziTweetsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC2B8BD6E931A54618EE4C7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlatziTweetsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8A683768095342999050AD9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlatziTweets-PlatziTweetsUITests/Pods-PlatziTweets-PlatziTweetsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlatziTweets-PlatziTweetsUITests/Pods-PlatziTweets-PlatziTweetsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlatziTweets-PlatziTweetsUITests/Pods-PlatziTweets-PlatziTweetsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1CD81EB268BCCD300943D98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F10184FE268CF2DD00E34343 /* PostRequestLocation.swift in Sources */,
+				F168B9BC2692842A00216058 /* WelcomeViewController.swift in Sources */,
+				F1018502268CF33700E34343 /* Endpoints.swift in Sources */,
+				F185601826A0A48200DDA11D /* MapViewController.swift in Sources */,
+				F1C8E8702693E04F00DC58EF /* AddPostViewController.swift in Sources */,
+				F168B9B326925DDE00216058 /* HomeViewController.swift in Sources */,
+				F1CD822C268BE96600943D98 /* RegisterViewController.swift in Sources */,
+				F1018500268CF30500E34343 /* LoginRequest.swift in Sources */,
+				F10184FA268CF29E00E34343 /* RegisterRequest.swift in Sources */,
+				F1018504268CF35C00E34343 /* User.swift in Sources */,
+				F10184F3268CF23000E34343 /* LoginResponse.swift in Sources */,
+				F1018506268CF37600E34343 /* Post.swift in Sources */,
+				F1CD81F7268BCCD300943D98 /* ViewController.swift in Sources */,
+				F1877A0A26929C7F00089AC7 /* TweetTableViewCell.swift in Sources */,
+				F10184F7268CF25800E34343 /* GeneralResponse.swift in Sources */,
+				F1018508268CF38E00E34343 /* PostLocation.swift in Sources */,
+				F168B9BE2692844700216058 /* LoginViewController.swift in Sources */,
+				F10184FC268CF2B700E34343 /* PostRequest.swift in Sources */,
+				F1CD81F3268BCCD300943D98 /* AppDelegate.swift in Sources */,
+				F10184F5268CF24200E34343 /* ErrorResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1CD8201268BCCD600943D98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1CD820A268BCCD600943D98 /* PlatziTweetsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1CD820C268BCCD600943D98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1CD8215268BCCD600943D98 /* PlatziTweetsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1CD8207268BCCD600943D98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1CD81EE268BCCD300943D98 /* PlatziTweets */;
+			targetProxy = F1CD8206268BCCD600943D98 /* PBXContainerItemProxy */;
+		};
+		F1CD8212268BCCD600943D98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1CD81EE268BCCD300943D98 /* PlatziTweets */;
+			targetProxy = F1CD8211268BCCD600943D98 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F1CD81FD268BCCD600943D98 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1CD81FE268BCCD600943D98 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1CD8217268BCCD600943D98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1CD8218268BCCD600943D98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1CD821A268BCCD600943D98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEE6D3BA13311A8B4D27959C /* Pods-PlatziTweets.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XL8LNQ68C9;
+				INFOPLIST_FILE = PlatziTweets/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vamx.MatchOne.PlatziTweets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F1CD821B268BCCD600943D98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 523278F3DC20DF3B66FA2E32 /* Pods-PlatziTweets.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XL8LNQ68C9;
+				INFOPLIST_FILE = PlatziTweets/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vamx.MatchOne.PlatziTweets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F1CD821D268BCCD600943D98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47AFAEF8B824E9FDBB7B3888 /* Pods-PlatziTweetsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PlatziTweetsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vamx.MatchOne.PlatziTweetsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlatziTweets.app/PlatziTweets";
+			};
+			name = Debug;
+		};
+		F1CD821E268BCCD600943D98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C98FC93DD1E5B49549D1DC19 /* Pods-PlatziTweetsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PlatziTweetsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vamx.MatchOne.PlatziTweetsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlatziTweets.app/PlatziTweets";
+			};
+			name = Release;
+		};
+		F1CD8220268BCCD600943D98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3D74BA6CCA29C9C26299022 /* Pods-PlatziTweets-PlatziTweetsUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PlatziTweetsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vamx.MatchOne.PlatziTweetsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PlatziTweets;
+			};
+			name = Debug;
+		};
+		F1CD8221268BCCD600943D98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60840E96C0C515B4C3A33271 /* Pods-PlatziTweets-PlatziTweetsUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PlatziTweetsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vamx.MatchOne.PlatziTweetsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PlatziTweets;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1CD81EA268BCCD300943D98 /* Build configuration list for PBXProject "PlatziTweets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1CD8217268BCCD600943D98 /* Debug */,
+				F1CD8218268BCCD600943D98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1CD8219268BCCD600943D98 /* Build configuration list for PBXNativeTarget "PlatziTweets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1CD821A268BCCD600943D98 /* Debug */,
+				F1CD821B268BCCD600943D98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1CD821C268BCCD600943D98 /* Build configuration list for PBXNativeTarget "PlatziTweetsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1CD821D268BCCD600943D98 /* Debug */,
+				F1CD821E268BCCD600943D98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1CD821F268BCCD600943D98 /* Build configuration list for PBXNativeTarget "PlatziTweetsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1CD8220268BCCD600943D98 /* Debug */,
+				F1CD8221268BCCD600943D98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1CD81E7268BCCD300943D98 /* Project object */;
+}
